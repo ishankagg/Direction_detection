@@ -14,6 +14,8 @@ data = r.json()
 print(data)
 
 ticker = 'TATASTEEL.NS'
+
+end = ''
 data = yf.download(ticker, start='2000-01-01', end='2024-05-29')
 print(data)
 data.to_csv(f'{ticker}.csv')
@@ -25,19 +27,19 @@ print(financials)
 msft = yf.Ticker(ticker)
 msft.info
 
-msft.income_stmt
-msft.quarterly_income_stmt
-msft.balance_sheet
-msft.cashflow
-msft.major_holders
-msft.institutional_holders
-msft.recommendations
-msft.recommendations_summary
-msft.upgrades_downgrades
-msft.news
-msft.splits
-msft.dividends
-msft.actions
+# msft.income_stmt
+# msft.quarterly_income_stmt
+# msft.balance_sheet
+# msft.cashflow
+# msft.major_holders
+# msft.institutional_holders
+# msft.recommendations
+# msft.recommendations_summary
+# msft.upgrades_downgrades
+# msft.news
+# msft.splits
+# msft.dividends
+# msft.actions
 
 
 
